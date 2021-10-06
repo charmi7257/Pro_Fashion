@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Profashion</title>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="template.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <style>
+
+ hr{
+ border-color:#23bca5;
+ }
+  .panel-primary >.panel-heading{
+  background-color:#23bca5;
+  text-align:center;
+  color:white;
+  border-color:black;
+  }
+  .panel-success >.panel-heading{
+  background-color:#23bca5;
+  text-align:center;
+  color:white;
+  border-color:black;
+  }
+  .panel-danger >.panel-heading{
+  background-color:#23bca5;
+  text-align:center;
+  color:white;
+  border:black;
+  }
+    
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+	.carousel-inner img {
+      width: 100%;
+      height: 100%;
+	  }
+#myCarousel1{
+height:300px;
+width:100%;
+overflow:hidden;
+}
+#Carousel{
+height:100%;
+width:100%;
+overflow:hidden;
+}
+#Carousel1{
+height:300px;
+width:100%;
+overflow:hidden;
+}
+#Carousel2{
+height:300px;
+width:100%;
+overflow:hidden;
+}
+.responsive {
+    width:100%;
+    height: auto;
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top"style="height:0%">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" class="active" style="color:#23bca5;" href="index.html"><b>Pro fashion</b></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="stores.html">Stores</a></li>
+        <li><a href="contactUs.html">Contact</a></li>
+		
+		<form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="input-group">
+        <input type="text" class="form-control"placeholder="Search" name="search">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+      </div>
+    </form>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+	  <li><a data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
+            <li><a href="sign_up.html"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+            <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span>My Account <span class="caret"></span></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Profile</a></li>
+			<li><a href="#">My Orders</a></li>
+			<li><a href="#">Whishlist</a></li>
+			<li><a href="#">Rewards</a></li>
+			<li><a href="#">Notifications</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"> &times;</button>
+                <h4>Login</h4>
+            </div>
+            <div class="modal-body">
+                   <form class="form-inline">
+                   <div class="form-group">
+                       <label class="sr-only" for="email">Email</label><input type="text" class="form-control input-sm" placeholder="Email" id="email" name="email">
+                       </div>
+                        <div class="form-group">  
+                          
+                           <label class="sr-only" for="password">Password</label>
+                                     <input type="password" class="form-control input-sm" placeholder="Password" id="password" name="password"></div>
+                       <div class="checkbox">
+                       <label>
+                       <input type="checkbox"> Remember me
+                       </label>
+                         </div>
+                    
+                       <button type="submit" style="background-color:#18a380;" class="btn btn-info btn-xs">Sign in</button>
+                       <button type="button" style="background-color:#18a380;color:white;" class="btn btn-default btn-xs" data-dismiss="modal">Cancel</button> 
+ 
+                    </form>
+            </div>
+<!--
+            <div class="modal-footer">
+                <div style="padding:10px"></div>
+            </div>
+-->
+        </div>
+        </div>
+    </div>
+<br><br>
+ <br><br><br>
+ <div >
+ <center>
+ <img src="main_img/logo.jpg"class="responsive" alt="Los Angeles" style="width:40%;height:100px;">
+  </center>
+  </div>
+<br><br>
+
+
+<div class="container" id="div1"> 
+	<img class="Sd1" border="0";alt="null"src="carousel/c1.png">
+  <img class="Sd1"border="0";alt="null" src="carousel/c2.png">
+  <img class="Sd1"border="0";alt="null"src="carousel/c3.png">
+  <img class="Sd1"border="0";alt="null" src="carousel/c4.jpg">
+  <img class="Sd1"border="0";alt="null" src="carousel/c5.jpg">
+  <img class="Sd1"border="0";alt="null" src="carousel/c6.jpg">
+  <img class="Sd1"border="0";alt="null" src="carousel/c7.jpg">
+  <img class="Sd1"border="0";alt="null" src="carousel/c8.jpg">
+  <img class="Sd1"border="0";alt="null" src="carousel/c9.jpg">
+  <img class="Sd1"border="0";alt="null" src="carousel/c10.jpg">
+  <img class="Sd1"border="0";alt="null" src="carousel/c11.jpg">
+  <img class="Sd1"border="0";alt="null" src="carousel/c12.jpg">
+  <img class="Sd1"border="0";alt="null" src="carousel/c13.jpg">
+  <img class="Sd1"border="0";alt="null" src="carousel/c14.jpg">
+  <img class="Sd1" border="0";alt="null"src="carousel/c15.jpg">
+  <img class="Sd1"border="0";alt="null" src="carousel/c16.gif">
+  <img class="Sd1"border="0";alt="null" src="carousel/c17.png">
+ 
+</div>
+<script>
+var M1 = 0;
+carousel1();
+function carousel1() {
+    var i;
+    var x = document.getElementsByClassName("Sd1");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    M1++;
+    if (M1 > x.length) {M1 = 1}    
+    x[M1-1].style.display = "block";  
+    setTimeout(carousel1, 2000); // Change image every 2 seconds
+}
+</script>
+<br><br>
+ <div style="padding:20px;>
+<div id="Carousel" class="carousel slide" data-ride="carousel">
+	<!-- Indicators -->
+    <ol class="carousel-indicators" style="color:black;">
+      <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#Carousel" data-slide-to="1"></li>
+      <li data-target="#Carousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+	  <center>
+        <img src="carousel_2/fest.jpg"class="responsive" alt="Los Angeles" style="width:90%;height:500px;">
+      </center>
+	  </div>
+      <div class="item">
+	  <center>
+        <img src="carousel_2/rk.jpg"class="responsive" alt="Chicago" style="width:90%;height:500px">
+      </center>
+	  </div>
+	  <div class="item">
+	  <center>
+        <img src="carousel_2/rk1.jpg"class="responsive" alt="Chicago" style="width:90%;height:500px">
+      </center>
+	  </div>
+    </div>
+	
+</div>
+</div>
+<br><br>
+<div class="container" style="width:90%">    
+<br>
+	<center><h1><b>Shop By Category</b></h1><center>
+	<hr width="50%" align="center" style="margin-left:25%">
+  <br>
+  <div style="padding:20px;">
+<div id="Carousel1" class="carousel slide" data-ride="carousel">
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="carousel_b/babys.jpg"class="responsive" alt="Los Angeles" style="width:100%;height:300px">
+      </div>
+	  <div class="item">
+        <img src="carousel_b/rebirth.jpg"class="responsive" alt="Los Angeles" style="width:100%;height:300px">
+      </div>
+      <div class="item">
+        <img src="carousel_b/pampers.png"class="responsive" alt="Chicago" style="width:100%;height:300px">
+      </div>
+	  <div class="item">
+        <img src="carousel_b/jj.png"class="responsive" alt="Chicago" style="width:100%;height:300px">
+      </div>
+	  <div class="item">
+        <img src="carousel_b/himalaya.jpg"class="responsive" alt="Chicago" style="width:100%;height:300px">
+      </div>
+	  <div class="item">
+        <img src="carousel_b/chicco1.jpg"class="responsive" alt="Chicago" style="width:140%;height:300px">
+      </div>
+    </div>
+	<!-- Left and right controls -->
+    <a class="left carousel-control" href="#Carousel1" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#Carousel1" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3" >
+      <div class="panel panel-primary" style="border-color:black;">
+      
+	<div class="panel-heading">NewBorns Wear</div>
+	<a href="cat_baby.html">
+        <div class="panel-body"><img src="carousel/c10.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer" style="text-align:center;color:#23bca5">Buy fresh stalk @ FLAT 10% off</div>
+    </a>
+	  </div>
+    </div>
+	</div>
+	<br>
+	<br>
+	<h1><b>Our Top Brands for Newborns</b></h1>
+	<hr width="50%" align="center" style="margin-left:25%">
+	<img  class="Sd2"border="0";alt="null"src="brands/mm.png">
+	<img  class="Sd2"border="0";alt="null"src="brands/a.png">
+	<img  class="Sd2"border="0";alt="null"src="brands/chicco.jpg">
+	<img  class="Sd2"border="0";alt="null"src="brands/d.png">
+	<img  class="Sd2"border="0";alt="null"src="brands/jh.png">
+	<img  class="Sd2"border="0";alt="null"src="brands/r.png"><br><br><br>
+	<br>
+	<div style="padding:20px;">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="carousel_k/kc.jpg"class="responsive" alt="Los Angeles" style="width:100%;height:300px">
+      </div>
+	  <div class="item">
+        <img src="carousel_k/kc3.jpg"class="responsive" alt="Los Angeles" style="width:100%;height:300px">
+      </div>
+      <div class="item">
+        <img src="carousel_k/kc5.png"class="responsive" alt="Chicago" style="width:100%;height:300px">
+      </div>
+	  <div class="item">
+        <img src="carousel_k/kc7.jpg"class="responsive" alt="Chicago" style="width:100%;height:300px">
+      </div>
+	  <div class="item">
+        <img src="carousel_k/kc8.png"class="responsive" alt="Chicago" style="width:100%;height:300px">
+      </div>
+	  <div class="item">
+        <img src="carousel_k/kc6.jpg"class="responsive" alt="Chicago" style="width:100%;height:300px">
+      </div>
+	   <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    </div>
+  </div>
+  </div>
+  <br><br>
+	<div class="row">
+    <div class="col-md-6"> 
+      <div class="panel panel-danger"style="border-color:black;">
+        <div class="panel-heading">Boys Wear</div>
+		<a href="boys_cat.html">
+        <div class="panel-body"><img src="carousel/c13.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer" style="text-align:center;color:#23bca5">starting from Rs399</div>
+		</a>
+	 </div>
+    </div>
+  <div class="col-md-6"> 
+      <div class="panel panel-success"style="border-color:black;">
+        <div class="panel-heading">Girls Wear</div>
+        <a href="girls_cat.html">
+		<div class="panel-body"><img src="carousel/g.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer" style="text-align:center;color:#23bca5">Buy ethnic wear @ FLAT 30% off</div>
+      </a>
+	  </div>
+    </div>
+	</div>
+	<br>
+	<br>
+	<h1><b>Our Top Brands for Kids Wear</b></h1>
+	<hr width="50%" align="center" style="margin-left:25%">
+	<img  class="Sd2"border="0";alt="null"src="brands/v.png">
+	<img  class="Sd2"border="0";alt="null"src="brands/nn.jpg">
+	<img  class="Sd2"border="0";alt="null"src="brands/gg.png">
+	<img  class="Sd2"border="0";alt="null"src="brands/j.jpg">
+	<img  class="Sd2"border="0";alt="null"src="brands/kk.png">
+	<img  class="Sd2"border="0";alt="null"src="brands/lk.jpg"><br><br><br>
+<br>
+	<div style="padding:20px;">
+<div id="Carousel2" class="carousel slide" data-ride="carousel">
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="carousel/wc2.jpg"class="responsive" alt="Los Angeles" style="width:100%;height:300px">
+      </div>
+	  <div class="item">
+        <img src="carousel/wc.jpg"class="responsive" alt="Los Angeles" style="width:100%;height:300px">
+      </div>
+      <div class="item">
+        <img src="carousel/wc1.jpg"class="responsive" alt="Chicago" style="width:100%;height:300px">
+      </div>
+    </div>
+	<!-- Left and right controls -->
+    <a class="left carousel-control" href="#Carousel2" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#Carousel2" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  </div>
+	<br><br>
+	 <div class="row"style="align:center">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="panel panel-primary"style="border-color:black;">
+        <div class="panel-heading">Womens Wear</div>
+		<a href="cat_women.html">
+        <div class="panel-body"><img src="carousel/k.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer" style="text-align:center;color:#23bca5">Best for all seasons</div>
+      </a>
+	  </div>
+    </div>
+  </div>
+<br>
+
+	<br>
+	<h1><b>Our Top Brands for Womens Wear</b></h1>
+	<hr width="50%" align="center" style="margin-left:25%">
+	<img  class="Sd2"border="0";alt="null"src="brands/pj.jpg">
+	<img  class="Sd2"border="0";alt="null"src="brands/b.jpg">
+	<img  class="Sd2"border="0";alt="null"src="brands/z.png">
+	<img  class="Sd2"border="0";alt="null"src="brands/deal.png">
+	<img  class="Sd2"border="0";alt="null"src="brands/ww.jpg">
+	<br><br><br>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Online Store Copyright</p>  
+  <form class="form-inline">Get deals:
+    <input type="email" class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-danger">Sign Up</button>
+  </form>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+#div2{
+	text-align:center;
+	height:30%;
+	width:100%;
+	
+}
+#div3{
+	 background-image: url('main_img/bgc.png');
+	text-align:center;
+}
+#div4{
+	height:400px;
+	width:400px;
+	overflow:hidden;
+}
+.Sd2{
+	height:80%;
+	width:180px;
+}
+.Sd1{
+	height:100%;
+	width:100%;
+}
+.Sd3{
+	height:100%;
+	width:500px;
+}
+.Sd4{
+	height:100%;
+	width:500px;
+}
+#div1{
+	height:650px;
+	width:100%;
+	
+	overflow:hidden;
+}

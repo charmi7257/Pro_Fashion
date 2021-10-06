@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Profashion</title>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="template.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 8px;
+}
+
+.column img {
+    margin-top: 15px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+	color:black;
+}
+.column :hover img {
+        -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    
+	}
+	footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+</style>
+  </head>
+<body >
+
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top"style="height:0%">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" class="active" style="color:#23bca5" href="index.html"><b>Pro fashion</b></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="stores.html">Stores</a></li>
+        <li><a href="contactUs.html">Contact</a></li>
+		
+		<form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="input-group">
+        <input type="text" class="form-control"placeholder="Search" name="search">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+      </div>
+    </form>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+	  <li><a data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
+            <li><a href="sign_up.html"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+            <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span>My Account <span class="caret"></span></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Profile</a></li>
+			<li><a href="#">My Orders</a></li>
+			<li><a href="#">Whishlist</a></li>
+			<li><a href="#">Rewards</a></li>
+			<li><a href="#">Notifications</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"> &times;</button>
+                <h4>Login</h4>
+            </div>
+            <div class="modal-body">
+                   <form class="form-inline">
+                   <div class="form-group">
+                       <label class="sr-only" for="email">Email</label><input type="text" class="form-control input-sm" placeholder="Email" id="email" name="email">
+                       </div>
+                        <div class="form-group">  
+                          
+                           <label class="sr-only" for="password">Password</label>
+                                     <input type="password" class="form-control input-sm" placeholder="Password" id="password" name="password"></div>
+                       <div class="checkbox">
+                       <label>
+                       <input type="checkbox"> Remember me
+                       </label>
+                         </div>
+                    
+                      
+                        
+                       <button type="submit" style="background-color:#23bca5;" class="btn btn-info btn-xs">Sign in</button>
+                       <button type="button" style="background-color:#23bca5;color:white;" class="btn btn-default btn-xs" data-dismiss="modal">Cancel</button> 
+ 
+                    </form>
+            </div>
+<!--
+            <div class="modal-footer">
+                <div style="padding:10px"></div>
+            </div>
+-->
+        </div>
+        </div>
+    </div>
+<br><br>
+ <br><br><br>
+ <div >
+ <center>
+ <img src="main_img/logo.jpg"class="responsive" alt="Los Angeles" style="width:40%;height:100px;">
+  </center>
+  </div>
+<br><br>
+<div>
+	<center>
+	<img src="main_img/fs.gif">
+	</center>
+</div>
+<br><br>
+<div class="container">
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#newborn">NEW BORNS</a></li>
+    <li><a data-toggle="tab" href="#boyswear">BOYS WEAR</a></li>
+    <li><a data-toggle="tab" href="#girlswear">GIRLS WEAR</a></li>
+    <li><a data-toggle="tab" href="#womenswear">WOMENS WEAR</a></li>
+  </ul>
+
+<div class="tab-content">
+  <div id="newborn" class="tab-pane fade in active">
+  <div id="myCarousel"class="carousel slide"data-ride="carousel">
+ <div class="carousel-inner">
+ <div class="active item">
+ <img src="carousel_s/nt1.jpg"class="responsive" alt="Los Angeles" style="width:100%;height:250px;">
+  </div>
+  <div class="item">
+ <img src="carousel_s/nt.png"class="responsive" alt="Los Angeles" style="width:100%;height:250px">
+  </div>
+  </div>
+  </div>
+      <div class="header">
+		<h1><b>NEW BORN</h1>
+		<p style="color:#23bca5;">Give your newly born all clean.</b></p>
+	  </div>
+	<div class="row" class="single-products-category clearfix" style="padding:40px;"> 
+  <div class="column">
+    <a href="#"><img src="product_b/bfnb.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_b/ccfnb.jpg" style="width:100%"></a>
+	<a href="#"><img src="product_b/cfnb.jpg" style="width:100%"></a>
+   <a href="#"> <img src="product_b/cg&m.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_b/efbb.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_b/efbg.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_b/f&d.jpg" style="width:100%"></a>
+  </div>
+  <div class="column">
+    <a href="#"><img src="product_b/f.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_b/ftfnb.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_b/ftfng.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_b/i&t.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_b/jfnb.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_b/lfnb.jpg" style="width:100%"></a>
+	<a href="#"><img src="product_b/tyfnb.jpg" style="width:100%"></a>
+  </div>  
+  <div class="column">
+    <a href="#"><img src="product_b/nfnb.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_b/o&r.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_b/pfbb.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_b/s&t.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_b/sfbb.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_b/sfbg.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_b/sfnb.jpg" style="width:100%"></a>
+  </div>
+  <div class="column">
+    
+	<a href="#"><img src="product_b/shfbb.jpg" style="width:100%"></a>
+	<a href="#"><img src="product_b/smfbb.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_b/smfbg.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_b/ssfnb.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_b/t&t.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_b/tfnb.jpg" style="width:100%"></a>
+	<a href="#"><img src="product_b/s&s.jpg" style="width:100%"></a>
+  </div>  
+</div>
+    </div>
+    <div id="boyswear" class="tab-pane fade">
+	 <div id="myCarousel"class="carousel slide"data-ride="carousel">
+ <div class="carousel-inner">
+ <div class="active item">
+ <img src="carousel_s/bh.jpg"class="responsive" alt="Los Angeles" style="width:100%;height:250px;">
+  </div>
+  <div class="item">
+ <img src="carousel_s/b1.jpg"class="responsive" alt="Los Angeles" style="width:100%;height:250px">
+  </div>
+  </div>
+  </div>
+	 <div class="header">
+		<h1><b>BOYS WEAR</h1>
+		<p style="color:#23bca5;">Style your baby boy the best for all occasions.</b></p>
+	  </div>
+	<div class="row" style="padding:40px;"> 
+  <div class="column">
+    <a href="#"><img src="product_boys/tfb.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_boys/s&j.jpg" style="width:100%"></a>
+	<a href="#"><img src="product_boys/pfb.jpg" style="width:100%"></a>
+   <a href="#"><img src="product_boys/s&jfb.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_boys/sfb.jpg" style="width:100%"></a>
+  </div>
+  <div class="column">
+    <a href="#"><img src="product_boys/ewfb.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_boys/nfb.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_boys/t&pfb.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_boys/c&mfb.jpg" style="width:100%"></a>
+	<a href="#"><img src="product_boys/tcfb.jpg" style="width:100%"></a>
+  </div>  
+  <div class="column">
+    <a href="#"><img src="product_boys/rwfb.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_boys/sgfb.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_boys/ffb.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_boys/pffb.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_boys/jfb.jpg" style="width:100%"></a>
+	</div>
+  <div class="column">
+  <a href="#"><img src="product_boys/swfb.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_boys/t&ifb.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_boys/sofb.jpg" style="width:100%"></a>
+    <a href="#"> <img src="product_boys/sb.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_boys/s&sfb.jpg" style="width:100%"></a>
+   </div>  
+</div>
+    </div>
+	
+    <div id="girlswear" class="tab-pane fade">
+      <div id="myCarousel"class="carousel slide"data-ride="carousel">
+ <div class="carousel-inner">
+ <div class="active item">
+ <img src="carousel_s/gt1.jpg"class="responsive" alt="Los Angeles" style="width:100%;height:250px;">
+  </div>
+  <div class="item">
+ <img src="carousel_s/gt.png"class="responsive" alt="Los Angeles" style="width:100%;height:250px">
+  </div>
+  </div>
+  </div>
+	 <div class="header">
+		<h1><b>GIRLS WEAR</h1>
+		<p style="color:#18a380;">Style your baby girl the best for all occasions.</b></p>
+	  </div>
+	<div class="row" style="padding:40px;"> 
+  <div class="column">
+    <a href="#"><img src="product_girls/pwfg.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_girls/t&tfg.jpg" style="width:100%"></a>
+	<a href="#"><img src="product_girls/jfg.jpg" style="width:100%"></a>
+   <a href="#"><img src="product_girls/sofg.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_girls/s&sfg.jpg" style="width:100%"></a>
+  </div>
+  <div class="column">
+    <a href="#"><img src="product_girls/ewfg.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_girls/s&sufg.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_girls/dFg.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_girls/s&jfg.jpg" style="width:100%"></a>
+	<a href="#"><img src="product_girls/swefg.jpg" style="width:100%"></a>
+  </div>  
+  <div class="column">
+    <a href="#"><img src="product_girls/nwfg.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_girls/p&lfg.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_girls/j&rfg.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_girls/i&tfg.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_girls/tcfg.jpg" style="width:100%"></a>
+	</div>
+  <div class="column">
+  <a href="#"><img src="product_girls/rwfg.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_girls/swfg.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_girls/ffg.jpg" style="width:100%"></a>
+    <a href="#"> <img src="product_girls/bpfg.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_girls/sfg.jpg" style="width:100%"></a>
+   <a href="#"><img src="product_girls/cfg.jpg" style="width:100%"></a>
+   <a href="#"><img src="product_girls/tfg.jpg" style="width:100%"></a>
+   </div>  
+</div></div>
+    <div id="womenswear" class="tab-pane fade">
+      	 <div id="myCarousel"class="carousel slide"data-ride="carousel">
+ <div class="carousel-inner">
+ <div class="active item">
+ <img src="carousel_s/w1.jpg"class="responsive" alt="Los Angeles" style="width:100%;height:250px;">
+  </div>
+  <div class="item">
+ <img src="carousel_s/w2.jpg"class="responsive" alt="Los Angeles" style="width:100%;height:250px">
+  </div>
+  </div>
+  </div>
+	 <div class="header">
+		<h1><b>WOMENS WEAR</h1>
+		<p style="color:#23bca5;">Style yourself the best for all occasions.</b></p>
+	  </div>
+	<div class="row" style="padding:40px;"> 
+  <div class="column">
+    <a href="#"><img src="product_women/ww1.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_women/wwc.jpg" style="width:100%"></a>
+	<a href="#"><img src="product_women/wwd.jpg" style="width:100%"></a>
+   <a href="#"><img src="product_women/wwds.jpg" style="width:100%"></a>
+  </div>
+  <div class="column">
+    <a href="#"><img src="product_women/wwe.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_women/wwsk.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_women/wwj.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_women/wwt.jpg" style="width:100%"></a>
+	</div>  
+  <div class="column">
+    <a href="#"><img src="product_women/wwl.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_women/wwn.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_women/wwp.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_women/wwk.jpg" style="width:100%"></a>
+   </div>
+  <div class="column">
+  <a href="#"><img src="product_women/wwsh.jpg" style="width:100%"></a>
+    <a href="#"><img src="product_women/wws.jpeg" style="width:100%"></a>
+    <a href="#"><img src="product_women/wwf.jpg" style="width:100%"></a>
+    <a href="#"> <img src="product_women/wwpf.jpg" style="width:100%"></a>
+    </div>  
+</div></div>
+ </div>
+ </div>
+<div>
+<center><img src="main_img/ft.jpg"style="width:50%; height:200px;"></center>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Online Store Copyright</p>  
+  <form class="form-inline">Get deals:
+    <input type="email" class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-danger">Sign Up</button>
+  </form>
+</footer>
+
+</body>
+</html>
